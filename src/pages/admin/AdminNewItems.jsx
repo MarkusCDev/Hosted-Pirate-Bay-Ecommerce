@@ -13,11 +13,12 @@ import {
 import { db } from "../../firebase";
 import { useUserAuth } from "../../components/UserAuth";
 import { serverTimestamp } from "@firebase/firestore";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const AdminNewItems = () => {
   const { user } = useUserAuth();
   const [userdata, setUserData] = useState([]);
+  const navigate = useNavigate()
 
   const retdata3 = async () => {
     const collectionRef = collection(db, "AdminItems");
@@ -62,6 +63,7 @@ const AdminNewItems = () => {
     });
 
     deleteItem(uidd);
+    navigate("/");
   }
 
   useEffect(() => {

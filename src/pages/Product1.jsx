@@ -306,12 +306,14 @@ function Product1() {
               <dl className="row">
                 <dt className="col-sm-4">Product #:</dt>
                 <dd className="col-sm-8 mb-3">{uid}</dd>
-                <dt className="col-sm-4">Current Bid:</dt>
-                <dd className="col-sm-8 mb-3">${userdata?.startbid} USD</dd>
                 <dt className="col-sm-4">Category</dt>
                 <dd className="col-sm-8 mb-3">{userdata?.keywords}</dd>
                 <dt className="col-sm-4">Seller</dt>
                 <dd className="col-sm-8 mb-3">{userdata?.seller}</dd>
+                <dt className="col-sm-4">Current Bid:</dt>
+                <dd className="col-sm-8 mb-3">${userdata?.startbid} USD</dd>
+                <dt className="col-sm-4">Highest Bidder:</dt>
+                <dd className="col-sm-8 mb-3">{userdata?.currentbidder}</dd>
               </dl>
               <h4 className="mb-0">Description</h4>
               <hr />
