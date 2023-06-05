@@ -181,8 +181,8 @@ function Product1() {
 
     if (timestamp != undefined) {
       const timestamp = userdata?.timestamp?.seconds;
-      //const hourLimit = userdata?.timelimit;
-      const hourLimit = 12
+      const hourLimit = userdata?.timelimit;
+      //const hourLimit = 12
       console.log("hourLimit: " + hourLimit);
       const currentTime = Math.floor(Date.now() / 1000); // Current time in seconds
       const timeElapsed = currentTime - timestamp;
