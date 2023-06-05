@@ -60,9 +60,9 @@ function Product1() {
 
     const docRef2 = doc(db, "Users", user.email);
     await updateDoc(docRef2, {
-      history: arrayUnion(data),
+      cartitems: arrayUnion(data),
     });
-    window.location.reload(true);
+    navigate("/cart");
   };
 
   const UpdateBid = async (e) => {
@@ -190,7 +190,7 @@ function Product1() {
       remainingTimeSeconds = Math.max(remainingTimeSeconds, 0); // Ensure remaining time is not negative
       setRemainingTime(remainingTimeSeconds);
       
-      if (remainingTimeSeconds === 0) {
+      if (remainingTimeSeconds == 0) {
         checkTime(); }
       const timer = setInterval(tick, 1000); // Run the tick function every second
       return () => clearInterval(timer);
