@@ -113,6 +113,7 @@ function Product1() {
       ident: uid,
       report: report,
       reason: reason,
+      imagelink: imglink,
       seller: sellerp,
       reporter: reporterr,
       timestamp: serverTimestamp(),
