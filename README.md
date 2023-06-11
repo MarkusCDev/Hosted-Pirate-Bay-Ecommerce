@@ -2,12 +2,28 @@
 
 Link: https://pbay-p.web.app/
 
-### `npm start`
+### Technologies
+React JS + Google Firebase/Firestore
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Features / Permission Groups
 
-The page will reload when you make changes.
+`GU` - Guest Users - View items, Report items, Signup/Login
+
+`OU` - Ordinary User (member) - GU perms, Request to add items, Buy items, Bid on items, Deposit/Withdraw, View Transaction History
+
+`SU` - Admin - Repond to reports, Accept requested items from OU, View OU tranasction history, Remove Items, Ban OU 
+
+
+### Screenshots
+
+Landing Page
+![alt text](./src/images/screenshots/ss1.jpg)
+
+Product Details
+![alt text](./src/images/screenshots/ss2.png)
+
+Admin Console
+![alt text](./src/images/screenshots/ss3.png)
 
 
 
